@@ -333,6 +333,12 @@ cuda_sph_enc32be(void *dst, sph_u32 val)
         ROUND_S(5); \
         ROUND_S(6); \
         ROUND_S(7); \
+        ROUND_S(8); \
+		ROUND_S(9); \
+		ROUND_S(0); \
+		ROUND_S(1); \
+		ROUND_S(2); \
+		ROUND_S(3); \
         H0 ^= S0 ^ V0 ^ V8; \
         H1 ^= S1 ^ V1 ^ V9; \
         H2 ^= S2 ^ V2 ^ VA; \
